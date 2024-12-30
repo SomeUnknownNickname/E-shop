@@ -1,0 +1,85 @@
+{
+    "products": [
+      {
+        "name": "Official Ball",
+        "slug": "Official_Ball",
+        "id": 1,
+        "image": "Official_Ball.jpg",
+        "description": "A professional-grade basketball suitable for indoor and outdoor play.",
+        "price": 35.99
+      },
+      {
+        "name": "Adjustable Hoop",
+        "slug": "Adjustable_Hoop",
+        "id": 2,
+        "image": "",
+        "description": "Adjustable height basketball hoop with a durable backboard.",
+        "price": 239.99
+      },
+      {
+        "name": "High-Performance Shoes",
+        "slug": "High-Performance_Shoes",
+        "id": 3,
+        "image": "",
+        "description": "High-performance basketball shoes designed for maximum comfort and grip.",
+        "price": 107.99
+      },
+      {
+        "name": "Lightweight Jersey",
+        "slug": "Lightweight_Jersey",
+        "id": 4,
+        "image": "",
+        "description": "Breathable and lightweight basketball jersey in various sizes.",
+        "price": 41.99
+      },
+      {
+        "name": "Durable Net",
+        "slug": "Durable_Net",
+        "id": 5,
+        "image": "Durable_Net.jpg",
+        "description": "Durable basketball net compatible with standard hoops.",
+        "price": 17.99
+      },
+      {
+        "name": "Grip Training Ball",
+        "slug": "Grip_Training_Ball",
+        "id": 6,
+        "image": "",
+        "description": "Specialized ball designed for grip and handling training.",
+        "price": 29.99
+      },
+      {
+        "name": "Indoor Court Shoes",
+        "slug": "Indoor_Court_Shoes",
+        "id": 7,
+        "image": "",
+        "description": "Shoes optimized for traction and comfort on indoor courts.",
+        "price": 95.99
+      },
+      {
+        "name": "Pro Backboard",
+        "slug": "Pro_Backboard",
+        "id": 8,
+        "image": "",
+        "description": "High-quality backboard for professional and recreational use.",
+        "price": 299.99
+      },
+      {
+        "name": "Compression Shorts",
+        "slug": "Compression_Shorts",
+        "id": 9,
+        "image": "Compression_Shorts.jpg",
+        "description": "Supportive compression shorts for enhanced performance and recovery.",
+        "price": 23.99
+      },
+      {
+        "name": "Wristband Set",
+        "slug": "Wristband_Set",
+        "id": 10,
+        "image": "",
+        "description": "Sweat-absorbing wristbands for comfort during intense games.",
+        "price": 11.99
+      }
+    ]
+  }
+  
