@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DestinationView from '@/views/DestinationView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
+import ShopppingView from '@/views/ShopppingView.vue'
+// import ShopView from '@/views/ShoppingView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,19 +13,28 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    // {
+    //   path: '/shop',
+    //   name: 'shoppig',
+    //   component: ShopView,
+    // }
     {
       path: '/product/:slug',
       name: 'product',
-      component: DestinationView,
+      component: ShopppingView,
       props: true,
-      children: [
-        {
-          path: ':experienceSlug',
-          name: 'experience',
-          component: ExperienceView,
-          props: true,
-        },
-      ],
+      // children: [
+      //   {
+      //     path: 'productSlug',
+      //     name: 'product',
+      //     component: productView,
+      //     props: true,
+      // //     path: ':experienceSlug',
+      // //     name: 'experience',
+      // //     component: ExperienceView,
+      // //     props: true,
+      //   },
+      // ],
     },
     {
       path: '/destination/:slug',

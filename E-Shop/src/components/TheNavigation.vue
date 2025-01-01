@@ -1,52 +1,88 @@
 <script>
-import SourceData from '../data.json'
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'TheNavigation',
-  computed: {
-    objects() {
-      return SourceData.destinations
-    },
+  name: "TheNavigation",
+  data() {
+    return {
+      HeaderLinks: [
+        { text: "Home", url: "/" },
+        { text: "Shop", url: "/shop" },
+        { text: "About Us", url: "/about" },
+        { text: "Contact", url: "/contact" },
+        { text: "Privacy Policy", url: "/privacy" },
+      ],
+    };
   },
-})
+});
 </script>
-<template>
 
+<template>
   <div id="nav">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink
-      v-for="object in objects"
-      :key="object.id"
-      :to="{ name: 'destination', params: { slug: object.slug } }"
-    >
-      {{ object.name }}
-    </RouterLink>
+    <div class="nav-left">
+      <img src="/public/logo.png" alt="Logo" class="logo" />
+    </div>
+    <div class="nav-links">
+      <a
+        v-for="link in HeaderLinks"
+        :key="link.text"
+        :href="link.url"
+      >
+        {{ link.text }}
+      </a>
+    </div>
+    <div class="nav-right">
+      <img src="/public/shopping_cart.png" alt="Shopping cart" class="shopping-cart" />
+    </div>
   </div>
 </template>
 
-<!-- <script>
-import SourceData from '../products.json'
-import { defineComponent } from 'vue'
+<style scoped>
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
 
-export default defineComponent({
-  name: 'TheNavigation',
-  computed: {
-    objects() {
-      return SourceData.products
-    },
-  },
-})
-</script>
-<template>
-  <div id="nav">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink
-      v-for="object in objects"
-      :key="object.id"
-      :to="{ name: 'destination', params: { slug: object.slug } }"
-    >
-      {{ object.name }}
-    </RouterLink>
-  </div>
-</template> -->
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.shopping-cart {
+  width: 30px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+</style>

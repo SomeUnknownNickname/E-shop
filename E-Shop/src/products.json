@@ -80,6 +80,28 @@
         "description": "Sweat-absorbing wristbands for comfort during intense games.",
         "price": 11.99
       }
+    ],
+    "categories": [
+      {
+        "name": "Basketball",
+        "slug": "Basketball",
+        "id": 1
+      },
+      {
+        "name": "Basketball Shoes",
+        "slug": "Basketball_Shoes",
+        "id": 2
+      },
+      {
+        "name": "Basketball Clothing",
+        "slug": "Basketball_Clothing",
+        "id": 3
+      },
+      {
+        "name": "Basketball Accessories",
+        "slug": "Basketball_Accessories",
+        "id": 4
+      }
     ]
   }
   

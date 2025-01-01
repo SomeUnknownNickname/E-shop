@@ -14,6 +14,17 @@
 <script>
 import SourceData1 from '../products.json'
 export default {
+  Product: {
+    name: 'Product',
+    props: {
+      slug: { type: String, required: true },
+    },
+    computed: {
+      product() {
+        return SourceData1.products.find((item) => item.slug == this.slug)
+      },
+    },
+  },
   data() {
     return {
       products: SourceData1.products,
